@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class OS(Document):
+class OSImages(Document):
 	pass

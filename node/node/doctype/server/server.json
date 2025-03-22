@@ -1,0 +1,74 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-03-22 07:08:04.174824",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "region",
+  "vcpu",
+  "column_break_nkdd",
+  "datacenter",
+  "column_break_ddag",
+  "os_images"
+ ],
+ "fields": [
+  {
+   "fieldname": "region",
+   "fieldtype": "Link",
+   "label": "Region",
+   "options": "Region"
+  },
+  {
+   "fieldname": "column_break_nkdd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "datacenter",
+   "fieldtype": "Link",
+   "label": "Datacenter",
+   "options": "Datacenter"
+  },
+  {
+   "fieldname": "os_images",
+   "fieldtype": "Link",
+   "label": "OS Images",
+   "options": "OS Images"
+  },
+  {
+   "fieldname": "column_break_ddag",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "vcpu",
+   "fieldtype": "Link",
+   "label": "vCPU",
+   "options": "vCPU"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-03-22 07:27:44.163039",
+ "modified_by": "Administrator",
+ "module": "Node",
+ "name": "Server",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

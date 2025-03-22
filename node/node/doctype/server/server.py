@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class OSVersion(Document):
+class Server(Document):
 	pass

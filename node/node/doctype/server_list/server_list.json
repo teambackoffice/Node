@@ -1,29 +1,25 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:os_version",
- "creation": "2025-03-20 22:26:40.037190",
+ "creation": "2025-03-22 07:29:29.624038",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "os_version"
+  "section_break_bepk"
  ],
  "fields": [
   {
-   "fieldname": "os_version",
-   "fieldtype": "Data",
-   "label": "OS Version",
-   "unique": 1
+   "fieldname": "section_break_bepk",
+   "fieldtype": "Section Break"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-03-20 22:26:57.921268",
+ "modified": "2025-03-22 07:29:29.624038",
  "modified_by": "Administrator",
  "module": "Node",
- "name": "OS Version",
- "naming_rule": "By fieldname",
+ "name": "Server List",
  "owner": "Administrator",
  "permissions": [
   {

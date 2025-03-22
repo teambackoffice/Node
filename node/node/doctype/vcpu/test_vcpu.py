@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestOS(FrappeTestCase):
+class TestvCPU(FrappeTestCase):
 	pass
