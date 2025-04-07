@@ -1,0 +1,85 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-03-29 12:12:54.914417",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_pwou",
+  "url",
+  "port",
+  "auth_type",
+  "column_break_faki",
+  "user_name",
+  "password",
+  "api_token"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_pwou",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "url",
+   "fieldtype": "Data",
+   "label": "Url"
+  },
+  {
+   "fieldname": "port",
+   "fieldtype": "Data",
+   "label": "Port"
+  },
+  {
+   "fieldname": "auth_type",
+   "fieldtype": "Select",
+   "label": "Auth Type",
+   "options": "Password\nApi Token"
+  },
+  {
+   "fieldname": "column_break_faki",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "user_name",
+   "fieldtype": "Data",
+   "label": "User Name"
+  },
+  {
+   "depends_on": "eval:doc.auth_type == \"Password\"",
+   "fieldname": "password",
+   "fieldtype": "Data",
+   "label": "Password"
+  },
+  {
+   "depends_on": "eval:doc.auth_type == \"Api Token\"",
+   "fieldname": "api_token",
+   "fieldtype": "Data",
+   "label": "Api Token"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-03-29 12:17:55.641817",
+ "modified_by": "Administrator",
+ "module": "Node",
+ "name": "Proxmox Server",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
