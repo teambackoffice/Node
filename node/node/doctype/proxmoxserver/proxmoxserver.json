@@ -1,0 +1,85 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-03-27 12:16:46.015421",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "server_name",
+  "url",
+  "port",
+  "username",
+  "password",
+  "auth_type",
+  "api_token",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "server_name",
+   "fieldtype": "Data",
+   "label": "Server Name"
+  },
+  {
+   "fieldname": "url",
+   "fieldtype": "Data",
+   "label": "Url"
+  },
+  {
+   "fieldname": "port",
+   "fieldtype": "Int",
+   "label": "Port"
+  },
+  {
+   "fieldname": "username",
+   "fieldtype": "Data",
+   "label": "Username"
+  },
+  {
+   "fieldname": "password",
+   "fieldtype": "Password",
+   "label": "Password"
+  },
+  {
+   "fieldname": "auth_type",
+   "fieldtype": "Select",
+   "label": "Auth Type",
+   "options": "Password\nAPI Token"
+  },
+  {
+   "fieldname": "api_token",
+   "fieldtype": "Data",
+   "label": "Api Token"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nInactive"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-03-27 12:24:25.137594",
+ "modified_by": "Administrator",
+ "module": "Node",
+ "name": "proxmoxserver",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
