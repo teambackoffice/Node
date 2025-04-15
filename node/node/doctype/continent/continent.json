@@ -1,47 +1,28 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:region_name",
- "creation": "2025-03-18 17:54:34.895146",
+ "autoname": "field:continent",
+ "creation": "2025-04-10 16:16:33.808352",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "region_name",
-  "column_break_dgfa",
-  "continent",
-  "flag"
+  "continent"
  ],
  "fields": [
   {
-   "fieldname": "region_name",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Region Name",
-   "unique": 1
-  },
-  {
-   "fieldname": "column_break_dgfa",
-   "fieldtype": "Column Break"
-  },
-  {
    "fieldname": "continent",
    "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Continent"
-  },
-  {
-   "fieldname": "flag",
-   "fieldtype": "Attach",
-   "label": "Flag"
+   "label": "Continent",
+   "unique": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-04-11 15:51:14.248166",
+ "modified": "2025-04-10 16:17:09.256728",
  "modified_by": "Administrator",
  "module": "Node",
- "name": "Region",
+ "name": "Continent",
  "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [

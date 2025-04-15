@@ -1,25 +1,86 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2025-03-22 07:29:29.624038",
+ "autoname": "field:url",
+ "creation": "2025-04-09 11:20:40.776904",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "section_break_bepk"
+  "section_break_pwou",
+  "url",
+  "port",
+  "auth_type",
+  "status",
+  "column_break_faki",
+  "user_name",
+  "password",
+  "api_token",
+  "region"
  ],
  "fields": [
   {
-   "fieldname": "section_break_bepk",
+   "fieldname": "section_break_pwou",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "url",
+   "fieldtype": "Data",
+   "label": "Url",
+   "unique": 1
+  },
+  {
+   "fieldname": "port",
+   "fieldtype": "Data",
+   "label": "Port"
+  },
+  {
+   "fieldname": "auth_type",
+   "fieldtype": "Select",
+   "label": "Auth Type",
+   "options": "Password\nApi Token"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Status"
+  },
+  {
+   "fieldname": "column_break_faki",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "user_name",
+   "fieldtype": "Data",
+   "label": "User Name"
+  },
+  {
+   "depends_on": "eval:doc.auth_type == \"Password\"",
+   "fieldname": "password",
+   "fieldtype": "Data",
+   "label": "Password"
+  },
+  {
+   "depends_on": "eval:doc.auth_type == \"Api Token\"",
+   "fieldname": "api_token",
+   "fieldtype": "Data",
+   "label": "Api Token"
+  },
+  {
+   "fieldname": "region",
+   "fieldtype": "Link",
+   "label": "Region",
+   "options": "Region"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-03-22 07:29:29.624038",
+ "modified": "2025-04-09 16:45:53.900455",
  "modified_by": "Administrator",
  "module": "Node",
  "name": "Server List",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
@@ -35,6 +96,7 @@
    "write": 1
   }
  ],
+ "row_format": "Dynamic",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []

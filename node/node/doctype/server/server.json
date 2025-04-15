@@ -8,9 +8,11 @@
   "region",
   "vcpu",
   "column_break_nkdd",
-  "datacenter",
+  "server",
+  "node",
   "column_break_ddag",
-  "os_images"
+  "iso_images",
+  "vm"
  ],
  "fields": [
   {
@@ -24,18 +26,6 @@
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "datacenter",
-   "fieldtype": "Link",
-   "label": "Datacenter",
-   "options": "Datacenter"
-  },
-  {
-   "fieldname": "os_images",
-   "fieldtype": "Link",
-   "label": "OS Images",
-   "options": "OS Images"
-  },
-  {
    "fieldname": "column_break_ddag",
    "fieldtype": "Column Break"
   },
@@ -44,12 +34,36 @@
    "fieldtype": "Link",
    "label": "vCPU",
    "options": "vCPU"
+  },
+  {
+   "fieldname": "server",
+   "fieldtype": "Link",
+   "label": "Server",
+   "options": "Server List"
+  },
+  {
+   "fieldname": "iso_images",
+   "fieldtype": "Link",
+   "label": "ISO Image",
+   "options": "ISO Images"
+  },
+  {
+   "fieldname": "node",
+   "fieldtype": "Link",
+   "label": "Node",
+   "options": "Node"
+  },
+  {
+   "fieldname": "vm",
+   "fieldtype": "Link",
+   "label": "VM",
+   "options": "Virtual Machine"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-03-22 07:27:44.163039",
+ "modified": "2025-04-09 16:28:21.354470",
  "modified_by": "Administrator",
  "module": "Node",
  "name": "Server",
@@ -68,6 +82,7 @@
    "write": 1
   }
  ],
+ "row_format": "Dynamic",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []

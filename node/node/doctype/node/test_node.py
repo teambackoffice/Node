@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestProxmoxServer(FrappeTestCase):
+class TestNode(FrappeTestCase):
 	pass

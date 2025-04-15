@@ -1,47 +1,28 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:region_name",
- "creation": "2025-03-18 17:54:34.895146",
+ "autoname": "field:vm",
+ "creation": "2025-04-09 16:02:10.886217",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "region_name",
-  "column_break_dgfa",
-  "continent",
-  "flag"
+  "vm"
  ],
  "fields": [
   {
-   "fieldname": "region_name",
+   "fieldname": "vm",
    "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Region Name",
+   "label": "VM",
    "unique": 1
-  },
-  {
-   "fieldname": "column_break_dgfa",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "continent",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Continent"
-  },
-  {
-   "fieldname": "flag",
-   "fieldtype": "Attach",
-   "label": "Flag"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-04-11 15:51:14.248166",
+ "modified": "2025-04-09 16:02:35.212948",
  "modified_by": "Administrator",
  "module": "Node",
- "name": "Region",
+ "name": "Virtual Machine",
  "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [

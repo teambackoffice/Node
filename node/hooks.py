@@ -5,6 +5,10 @@ app_description = "VPS Control Pannel"
 app_email = "sammish.thundiyil@gmail.com"
 app_license = "mit"
 
+override_whitelisted_methods = {
+    "node.api.servers.get_servers": "node.api.servers.get_servers"
+}
+
 # Apps
 # ------------------
 
@@ -149,9 +153,10 @@ app_license = "mit"
 # ---------------
 
 # scheduler_events = {
-# 	"all": [
-# 		"node.tasks.all"
-# 	],
+#     "all": [
+#         "node.node.api.check_proxmox_connection"
+#     ],
+# }
 # 	"daily": [
 # 		"node.tasks.daily"
 # 	],
